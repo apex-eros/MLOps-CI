@@ -22,17 +22,17 @@ def test_square():
 # Testing the cube function
 
 def testcube():
-    assert cube(2) == 4, "Test Failed: cube of 2 should be 8"
-    assert cube(3) == 9, "Test Failed: cube of 3 should be 27"
+    assert cube(2) == 8, "Test Failed: cube of 2 should be 8"
+    assert cube(3) == 27, "Test Failed: cube of 3 should be 27"
 
 # Testing the fifth_power
 
 def test_fifth_power():
-    assert fifth_power(2) == 4, "Test Failed: fifth_power of 2 should be 4"
-    assert fifth_power(3) == 9, "Test Failed: fifth_power of 3 should be 9"
+    assert fifth_power(2) == 32, "Test Failed: fifth_power of 2 should be 4"
+    assert fifth_power(3) == 243, "Test Failed: fifth_power of 3 should be 9"
 
 # Test for invalid input
 
 def test_invalid_input():
     with pytest.raises(TypeError):
-        square(3)
+        square("string")
